@@ -1,0 +1,13 @@
+L_E01_1:lamp
+L_E02_1:lamp
+L_E03_1:lamp
+L_E04_1:lamp
+L_E04_2:lamp
+L_E04_3:lamp
+L_E05_1:lamp
+L_O01_1:lamp
+L_O02_1:lamp
+L_O02_2:lamp
+L_O03_1:lamp
+L_O03_2:lamp
+L_O04_1:lamp

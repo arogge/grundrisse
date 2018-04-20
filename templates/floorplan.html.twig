@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+			body { background-color:#777; }
+			div { background-color:white; width:1100px; padding:0px; border-style:outset; margin:2em; float:left; }
+		</style>
+	</head>
+	<body>
+		<!-- non-displayed svg with patterns and symbol definitions -->
+		<svg>
+			<pattern id="diagonalHatch" patternUnits="userSpaceOnUse" width="8" height="8">
+  			<path d="M-2,2 l4,-4 M0,8 l8,-8 M6,10 l4,-4" style="stroke:#aaa; stroke-width:1" />
+  		</pattern>
+  		<pattern id="stairPattern" patternUnits="userSpaceOnUse" width="20" height="20">
+	  		<path d="M0,0 l0,20" style="stroke:#000; stroke-width:1" />
+			</pattern>
+			<defs>
+				<g id="lamp-on">
+				  <circle cx="0" cy="0" r="8" stroke="black" fill="yellow" />
+				  <path d="M-8,-8 l16,16 M-8,8 l16,-16" stroke="black" />
+				</g>
+				<g id="lamp-off">
+		  		<circle cx="0" cy="0" r="8" stroke="black" fill="#eee" />
+				  <path d="M-8,-8 l16,16 M-8,8 l16,-16" stroke="black" />
+				</g>
+{{items|raw}}
+
+				<g id="eg-stair">
+					<rect width="390" height="98" fill="url(#stairPattern)" stroke="black" />
+					<path d="M110,49 l150,0 l-30,10 m0,-20 l30,10" stroke="black" fill="none" />
+				</g>
+				<g id="og-stair">
+					<rect width="308" height="98" fill="url(#stairPattern)" stroke="black" />
+					<path d="M70,49 l150,0 l-30,10 m0,-20 l30,10" stroke="black" fill="none" />
+				</g>
+			</defs>
+		</svg>
+{% include "floorplan-kg.html.twig" %}
+{% include "floorplan-eg.html.twig" %}
+{% include "floorplan-og.html.twig" %}
+	</body>
+</html>
+<!--
+# vim: ts=2 sw=2
+-->

@@ -1,0 +1,3 @@
+#index:
+#    path: /
+#    controller: Fienchen\Controller\FloorPlanController::foo
