@@ -1,0 +1,11 @@
+{% if bearing == 'r' %}
+	{% set reverse = 1 %}
+	{% set bowdirection = 1 %}
+{% else %}
+	{% set reverse = -1 %}
+	{% set bowdirection = 0 %}
+{% endif %}
+            <g id="{{xmlid}}" transform="rotate({{rotate}})">
+               	<text x="{{reverse * width / -2}}" y="0" text-anchor="middle" font-size="10"  transform="rotate({{rotate * -1}},{{reverse * width / -2}},0)">{{id}}</text>
+                <path d="M0,0 l0,{{width}} A {{width}} {{width}} 0 0 {{bowdirection}} {{reverse * width * -1}},0" stroke="#aaa" fill="none"/>
+            </g>

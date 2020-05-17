@@ -1,4 +1,3 @@
-		<div>
 			<svg viewBox="0 0 1172 675">
 				<g id="kg" transform="translate(41 31)">
 					<!-- linke, untere, rechte Wand -->
@@ -6,10 +5,20 @@
 					<!-- Wand Waschkueche/Lager -->
 					<polygon points="299,-30 299,0 327,0 327,368 293,368 293,395 396,395 396,368 354,368 354,0 512,0 512,-30" fill="url(#diagonalHatch)" stroke="black" />
 					<!-- Wand Lager/Buero -->
-					<polygon points="577,-30 577,0 697,0 697,353 637,353 637,368 471,368 471,395 697,395 697,421 724,421 724,13 834,13 834,-30" fill="url(#diagonalHatch)" stroke="black" />
+					<polygon points="577,-30 577,0 697,0 697,353 637,353 637,368 471,368 471,395 697,395 697,425 724,425 724,13 834,13 834,-30" fill="url(#diagonalHatch)" stroke="black" />
+
+					<use href="#t-k02-1" x="203" y="528" />
+					<use href="#t-k03-1" x="293" y="368" />
+					<use href="#t-k03-2" x="299" y="0" />
+					<use href="#t-k04-1" x="471" y="395" />
+					<use href="#t-k05-1" x="697" y="506" />
+					<use href="#f-k03-1" x="121" y="-30" />
+					<use href="#f-k04-1" x="512" y="-30" />
+					<use href="#f-k05-1" x="834" y="-30" />
+					<use href="#treppe-k01" x="333" y="613" />
+
 				</g>
 			</svg>
-		</div>
 <!--
 # vim: ts=2 sw=2
 -->

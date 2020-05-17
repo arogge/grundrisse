@@ -1,0 +1,10 @@
+            <g id="{{xmlid}}" transform="rotate({{rotate}})">
+               	<text x="{{width / 2}}" y="{{depth +11}}" text-anchor="middle" font-size="10"  transform="rotate({{rotate * -1}},{{width / -2}},0)">{{id}}</text>
+                <path d="M0,0 l{{width}},0 l0,{{depth}} L0,{{depth}} Z" stroke="black" fill="none"/>
+                <path d="
+                	M0,{{inset}} l{{width}},0
+                	M0,{{inset+3}} l{{width}},0
+                	M8,{{inset}} l0,3
+                	M{{width - 8}},{{inset}} l0,3
+                	" stroke="#777" fill="none" />
+            </g>

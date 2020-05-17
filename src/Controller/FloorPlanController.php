@@ -1,7 +1,6 @@
 <?php
 
 namespace Fienchen\Controller;
-use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Fienchen\Item\Manager;
@@ -18,7 +17,7 @@ class FloorPlanController extends Controller {
 		//$item = $this->manager->createItem([ 'L_E01_1' ]);
 		$this->manager->loadItems();
 		$items = $this->manager->getItemsSvg();
-		return $this->render('floorplan.html.twig', ['items' => $items ]);
+		return $this->render('floorplan.html', ['items' => $items ]);
 	}
 }
 

@@ -1,6 +1,5 @@
 <?php
 namespace Fienchen\Item;
-use Symfony\Component\Templating\EngineInterface;
 
 class Manager {
 	private $templating;
@@ -20,10 +19,21 @@ class Manager {
 		$type_id = @array_shift(explode('_', $id));
 		switch($type_id) {
 			case 'L':
+			case 'LD':
+			case 'LDA':
 				$item = new Lamp($data);
 				break;
+			case 'T':
+			    $item = new Door($data);
+			    break;
+			case 'F':
+			    $item = new Window($data);
+			    break;
+			case 'TREPPE':
+			    $item = new Stair($data);
+			    break;
 			default:
-				throw new Exception('unknown type');
+				throw new \Exception('unknown type');
 		}
 		$this->items[$id] = $item;
 		return $item;

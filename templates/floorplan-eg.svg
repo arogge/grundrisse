@@ -1,4 +1,3 @@
-		<div>
 			<svg viewBox="0 0 1168 698">
 				<defs>
 
@@ -49,7 +48,7 @@
 					<!-- Flur ab Fenster hinter Treppe -->
 					<polygon points="356,627 700,627 700,510 728,510 728,627 738,627 738,666 356,666" fill="url(#diagonalHatch)" stroke="black" />
 
-					<use href="#eg-stair" x="308" y="529" />
+					<use href="#treppe-e01" x="308" y="627" />
 					<use href="#eg-haustuer" x="0" y="415" />
 					<use href="#eg-wctuer" x="35" y="525" />
 					<use href="#eg-zwischentuer" x="133" y="418" />
@@ -81,4 +80,3 @@
 					<use href="#l-e05-1" x="920" y="300" />
   			</g>
 			</svg>
-		</div>

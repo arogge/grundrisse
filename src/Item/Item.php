@@ -8,7 +8,7 @@ abstract class Item {
 		$this->id = $data[0];
 	}
 	public function getTemplate() {
-		return strtolower(str_replace('\\', '_', get_class($this))). '.svg.twig';
+		return strtolower(str_replace('\\', '_', get_class($this))). '.svg';
 	}
 	public function getTemplateVariables() {
 		return array_merge(

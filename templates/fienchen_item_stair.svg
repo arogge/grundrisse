@@ -1,0 +1,6 @@
+            <g id="{{xmlid}}" transform="rotate({{rotate}})">
+
+				<rect width="{{width}}" height="{{length}}" fill="url(#stairPattern)" stroke="black" />
+				<path d="M{{width/2}},{{length/2 - 75}} l0,150 l10,-30 m-10,30 l-10,-30" stroke="black" fill="none" />
+
+            </g>
